@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB58C09026F5082100AE3340 /* TradeBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C08F26F5082100AE3340 /* TradeBotApp.swift */; };
+		EB58C09226F5082100AE3340 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C09126F5082100AE3340 /* ContentView.swift */; };
+		EB58C09426F5082900AE3340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB58C09326F5082900AE3340 /* Assets.xcassets */; };
+		EB58C09726F5082900AE3340 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB58C09626F5082900AE3340 /* Preview Assets.xcassets */; };
+		EB58C0A226F5082900AE3340 /* TradeBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0A126F5082900AE3340 /* TradeBotTests.swift */; };
+		EB58C0AD26F5082900AE3340 /* TradeBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0AC26F5082900AE3340 /* TradeBotUITests.swift */; };
+		EB58C0C026F514CD00AE3340 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB58C0BF26F514CD00AE3340 /* RealmSwift */; };
+		EB58C0C226F514CD00AE3340 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = EB58C0C126F514CD00AE3340 /* Realm */; };
+		EB58C0C726F514E500AE3340 /* GlobalQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0C626F514E500AE3340 /* GlobalQuote.swift */; };
+		EB58C0D026F5170D00AE3340 /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0CF26F5170D00AE3340 /* StockDetail.swift */; };
+		EB58C0DD26F51D8600AE3340 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0D826F51D8600AE3340 /* Animations.swift */; };
+		EB58C0DE26F51D8600AE3340 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0D926F51D8600AE3340 /* Font.swift */; };
+		EB58C0DF26F51D8600AE3340 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0DA26F51D8600AE3340 /* UIScreen.swift */; };
+		EB58C0E026F51D8600AE3340 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0DB26F51D8600AE3340 /* ViewModifier.swift */; };
+		EB58C0E126F51D8600AE3340 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58C0DC26F51D8600AE3340 /* Color.swift */; };
+		EBCCF61C271A0AE200CF8BBA /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCF61B271A0AE200CF8BBA /* WatchList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB58C09E26F5082900AE3340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB58C08426F5082100AE3340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB58C08B26F5082100AE3340;
+			remoteInfo = TradeBot;
+		};
+		EB58C0A926F5082900AE3340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB58C08426F5082100AE3340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB58C08B26F5082100AE3340;
+			remoteInfo = TradeBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB58C08C26F5082100AE3340 /* TradeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB58C08F26F5082100AE3340 /* TradeBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotApp.swift; sourceTree = "<group>"; };
+		EB58C09126F5082100AE3340 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB58C09326F5082900AE3340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB58C09626F5082900AE3340 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB58C09826F5082900AE3340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB58C09D26F5082900AE3340 /* TradeBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB58C0A126F5082900AE3340 /* TradeBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotTests.swift; sourceTree = "<group>"; };
+		EB58C0A326F5082900AE3340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB58C0A826F5082900AE3340 /* TradeBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradeBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB58C0AC26F5082900AE3340 /* TradeBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeBotUITests.swift; sourceTree = "<group>"; };
+		EB58C0AE26F5082900AE3340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB58C0C626F514E500AE3340 /* GlobalQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalQuote.swift; sourceTree = "<group>"; };
+		EB58C0CF26F5170D00AE3340 /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
+		EB58C0D826F51D8600AE3340 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		EB58C0D926F51D8600AE3340 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		EB58C0DA26F51D8600AE3340 /* UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		EB58C0DB26F51D8600AE3340 /* ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
+		EB58C0DC26F51D8600AE3340 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EBCCF61B271A0AE200CF8BBA /* WatchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB58C08926F5082100AE3340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB58C0C226F514CD00AE3340 /* Realm in Frameworks */,
+				EB58C0C026F514CD00AE3340 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C09A26F5082900AE3340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C0A526F5082900AE3340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB58C08326F5082100AE3340 = {
+			isa = PBXGroup;
+			children = (
+				EB58C08E26F5082100AE3340 /* TradeBot */,
+				EB58C0A026F5082900AE3340 /* TradeBotTests */,
+				EB58C0AB26F5082900AE3340 /* TradeBotUITests */,
+				EB58C08D26F5082100AE3340 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB58C08D26F5082100AE3340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C08C26F5082100AE3340 /* TradeBot.app */,
+				EB58C09D26F5082900AE3340 /* TradeBotTests.xctest */,
+				EB58C0A826F5082900AE3340 /* TradeBotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB58C08E26F5082100AE3340 /* TradeBot */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0D726F51D8600AE3340 /* Theme */,
+				EB58C0CE26F516EC00AE3340 /* Views */,
+				EB58C0BD26F5083B00AE3340 /* Models */,
+				EB58C08F26F5082100AE3340 /* TradeBotApp.swift */,
+				EB58C09126F5082100AE3340 /* ContentView.swift */,
+				EB58C09326F5082900AE3340 /* Assets.xcassets */,
+				EB58C09826F5082900AE3340 /* Info.plist */,
+				EB58C09526F5082900AE3340 /* Preview Content */,
+			);
+			path = TradeBot;
+			sourceTree = "<group>";
+		};
+		EB58C09526F5082900AE3340 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C09626F5082900AE3340 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB58C0A026F5082900AE3340 /* TradeBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0A126F5082900AE3340 /* TradeBotTests.swift */,
+				EB58C0A326F5082900AE3340 /* Info.plist */,
+			);
+			path = TradeBotTests;
+			sourceTree = "<group>";
+		};
+		EB58C0AB26F5082900AE3340 /* TradeBotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0AC26F5082900AE3340 /* TradeBotUITests.swift */,
+				EB58C0AE26F5082900AE3340 /* Info.plist */,
+			);
+			path = TradeBotUITests;
+			sourceTree = "<group>";
+		};
+		EB58C0BD26F5083B00AE3340 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0C626F514E500AE3340 /* GlobalQuote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB58C0CE26F516EC00AE3340 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0CF26F5170D00AE3340 /* StockDetail.swift */,
+				EBCCF61B271A0AE200CF8BBA /* WatchList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB58C0D726F51D8600AE3340 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EB58C0D826F51D8600AE3340 /* Animations.swift */,
+				EB58C0D926F51D8600AE3340 /* Font.swift */,
+				EB58C0DA26F51D8600AE3340 /* UIScreen.swift */,
+				EB58C0DB26F51D8600AE3340 /* ViewModifier.swift */,
+				EB58C0DC26F51D8600AE3340 /* Color.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB58C08B26F5082100AE3340 /* TradeBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB58C0B126F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBot" */;
+			buildPhases = (
+				EB58C08826F5082100AE3340 /* Sources */,
+				EB58C08926F5082100AE3340 /* Frameworks */,
+				EB58C08A26F5082100AE3340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradeBot;
+			packageProductDependencies = (
+				EB58C0BF26F514CD00AE3340 /* RealmSwift */,
+				EB58C0C126F514CD00AE3340 /* Realm */,
+			);
+			productName = TradeBot;
+			productReference = EB58C08C26F5082100AE3340 /* TradeBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB58C09C26F5082900AE3340 /* TradeBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB58C0B426F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBotTests" */;
+			buildPhases = (
+				EB58C09926F5082900AE3340 /* Sources */,
+				EB58C09A26F5082900AE3340 /* Frameworks */,
+				EB58C09B26F5082900AE3340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB58C09F26F5082900AE3340 /* PBXTargetDependency */,
+			);
+			name = TradeBotTests;
+			productName = TradeBotTests;
+			productReference = EB58C09D26F5082900AE3340 /* TradeBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB58C0A726F5082900AE3340 /* TradeBotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB58C0B726F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBotUITests" */;
+			buildPhases = (
+				EB58C0A426F5082900AE3340 /* Sources */,
+				EB58C0A526F5082900AE3340 /* Frameworks */,
+				EB58C0A626F5082900AE3340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB58C0AA26F5082900AE3340 /* PBXTargetDependency */,
+			);
+			name = TradeBotUITests;
+			productName = TradeBotUITests;
+			productReference = EB58C0A826F5082900AE3340 /* TradeBotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB58C08426F5082100AE3340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EB58C08B26F5082100AE3340 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EB58C09C26F5082900AE3340 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EB58C08B26F5082100AE3340;
+					};
+					EB58C0A726F5082900AE3340 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EB58C08B26F5082100AE3340;
+					};
+				};
+			};
+			buildConfigurationList = EB58C08726F5082100AE3340 /* Build configuration list for PBXProject "TradeBot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB58C08326F5082100AE3340;
+			packageReferences = (
+				EB58C0BE26F514CD00AE3340 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = EB58C08D26F5082100AE3340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB58C08B26F5082100AE3340 /* TradeBot */,
+				EB58C09C26F5082900AE3340 /* TradeBotTests */,
+				EB58C0A726F5082900AE3340 /* TradeBotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB58C08A26F5082100AE3340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB58C09726F5082900AE3340 /* Preview Assets.xcassets in Resources */,
+				EB58C09426F5082900AE3340 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C09B26F5082900AE3340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C0A626F5082900AE3340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB58C08826F5082100AE3340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB58C09226F5082100AE3340 /* ContentView.swift in Sources */,
+				EBCCF61C271A0AE200CF8BBA /* WatchList.swift in Sources */,
+				EB58C0DD26F51D8600AE3340 /* Animations.swift in Sources */,
+				EB58C0DE26F51D8600AE3340 /* Font.swift in Sources */,
+				EB58C0C726F514E500AE3340 /* GlobalQuote.swift in Sources */,
+				EB58C09026F5082100AE3340 /* TradeBotApp.swift in Sources */,
+				EB58C0DF26F51D8600AE3340 /* UIScreen.swift in Sources */,
+				EB58C0D026F5170D00AE3340 /* StockDetail.swift in Sources */,
+				EB58C0E026F51D8600AE3340 /* ViewModifier.swift in Sources */,
+				EB58C0E126F51D8600AE3340 /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C09926F5082900AE3340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB58C0A226F5082900AE3340 /* TradeBotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58C0A426F5082900AE3340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB58C0AD26F5082900AE3340 /* TradeBotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB58C09F26F5082900AE3340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB58C08B26F5082100AE3340 /* TradeBot */;
+			targetProxy = EB58C09E26F5082900AE3340 /* PBXContainerItemProxy */;
+		};
+		EB58C0AA26F5082900AE3340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB58C08B26F5082100AE3340 /* TradeBot */;
+			targetProxy = EB58C0A926F5082900AE3340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB58C0AF26F5082900AE3340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB58C0B026F5082900AE3340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB58C0B226F5082900AE3340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TradeBot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TradeBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB58C0B326F5082900AE3340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TradeBot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TradeBot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB58C0B526F5082900AE3340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradeBotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeBot.app/TradeBot";
+			};
+			name = Debug;
+		};
+		EB58C0B626F5082900AE3340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradeBotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradeBot.app/TradeBot";
+			};
+			name = Release;
+		};
+		EB58C0B826F5082900AE3340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradeBotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradeBot;
+			};
+			name = Debug;
+		};
+		EB58C0B926F5082900AE3340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TradeBotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = someCompanyIRL.TradeBotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradeBot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB58C08726F5082100AE3340 /* Build configuration list for PBXProject "TradeBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB58C0AF26F5082900AE3340 /* Debug */,
+				EB58C0B026F5082900AE3340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB58C0B126F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB58C0B226F5082900AE3340 /* Debug */,
+				EB58C0B326F5082900AE3340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB58C0B426F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB58C0B526F5082900AE3340 /* Debug */,
+				EB58C0B626F5082900AE3340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB58C0B726F5082900AE3340 /* Build configuration list for PBXNativeTarget "TradeBotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB58C0B826F5082900AE3340 /* Debug */,
+				EB58C0B926F5082900AE3340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB58C0BE26F514CD00AE3340 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB58C0BF26F514CD00AE3340 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB58C0BE26F514CD00AE3340 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		EB58C0C126F514CD00AE3340 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB58C0BE26F514CD00AE3340 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EB58C08426F5082100AE3340 /* Project object */;
+}
